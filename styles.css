@@ -1,0 +1,75 @@
+/* Color Schema */
+:root {
+    --primary-color: #0077B6; /* Blue for headings and accents */
+    --secondary-color: #F4A261; /* Orange for buttons and highlights */
+    --background-color: #F8F9FA; /* Light gray for background */
+    --text-color: #333333; /* Dark gray for body text */
+  }
+  
+  /* General Styles */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color);
+  }
+  
+  a, button {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  
+  button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Wireframe Layout */
+  .container {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .header, .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+ .header h1{
+    color: #F8F9FA;
+    font-family: 'Merriweather', serif;
+ }
+
+  .main-content {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .section {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Layout */
+  @media (min-width: 768px) {
+    .main-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
