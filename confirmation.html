@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Confirmation</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/confirmation.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo.png" alt="Advanced Eye Care Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="appointment.html">Appointment</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="confirmation-container">
+            <h1>Appointment Confirmation</h1>
+            <div id="confirmationDetails"></div>
+            <a href="index.html" class="button">Return to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Advanced Eye Care. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Retrieve form data from localStorage
+        const appointmentData = JSON.parse(localStorage.getItem('appointmentData'));
+
+        // Display the form data on the confirmation page
+        const confirmationDetails = document.getElementById('confirmationDetails');
+        if (appointmentData) {
+            confirmationDetails.innerHTML = `
+                <p><strong>Name:</strong> ${appointmentData.name}</p>
+                <p><strong>Phone:</strong> ${appointmentData.phone}</p>
+                <p><strong>Email:</strong> ${appointmentData.email}</p>
+                <p><strong>Date:</strong> ${appointmentData.date}</p>
+                <p><strong>Time:</strong> ${appointmentData.time}</p>
+                <p><strong>Area:</strong> ${appointmentData.area}</p>
+                <p><strong>City:</strong> ${appointmentData.city}</p>
+                <p><strong>State:</strong> ${appointmentData.state}</p>
+                <p><strong>Post Code:</strong> ${appointmentData.postCode}</p>
+            `;
+        } else {
+            confirmationDetails.innerHTML = `<p>No appointment data found.</p>`;
+        }
+    </script>
+</body>
+</html>

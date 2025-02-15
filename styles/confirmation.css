@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    background: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+  
+}
+
+/* ===== Form Styling ===== */
+.formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.formbold-form-wrapper {
+    max-width: 550px;
+    width: 100%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formbold-form-label {
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.formbold-form-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: white;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.formbold-form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(106, 100, 241, 0.2);
+}
+
+.formbold-btn {
+    text-align: center;
+    font-size: 18px;
+    border-radius: 6px;
+    padding: 14px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #6a64f1, #5148d4);
+    color: white;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.formbold-btn:hover {
+    background: linear-gradient(135deg, #5148d4, #3932b5);
+    transform: scale(1.02);
+}
+
+/* ===== Confirmation Page Styling ===== */
+.confirmation-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.confirmation-container h1 {
+    font-size: 24px;
+    color: #6a64f1;
+    margin-bottom: 20px;
+}
+
+#confirmationDetails {
+    text-align: left;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+#confirmationDetails p {
+    font-size: 16px;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #6a64f1;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #5148d4;
+}
